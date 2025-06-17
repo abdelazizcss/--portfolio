@@ -3,49 +3,359 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>لابلا - Portfolio</title>
+    <meta name="description" content="البورتفوليو الشخصي لـ بوخاري عبد العزيز - مطور ويب , مصمم ويب">
+    <title>بوخاري عبد العزيز - البورتفوليو الشخصي</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="https://img.icons8.com/color/48/000000/user-male-circle--v1.png"/>
 </head>
-<body>
-    <header class="hero">
+<body class="template-minimal">
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">ب</div>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="#home" class="active">الرئيسية</a></li>
+                <li><a href="#about">نبذة عني</a></li>
+                <li><a href="#skills">المهارات</a></li>
+                <li><a href="#portfolio">أعمالي</a></li>
+                <li><a href="#contact">تواصل معي</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- قسم الهيرو -->
+    <section id="home" class="hero" style="background: #2d3142">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">لابلا</h1>
-                <h2 class="hero-subtitle">لبايبا</h2>
-                <p class="hero-description">يلبايب</p>
-                <a href="mailto:لايبلاي" class="contact-btn">تواصل معي</a>
+                <div class="hero-text">
+                    <span class="greeting">مرحباً، أنا</span>
+                    <h1 class="name">بوخاري عبد العزيز</h1>
+                    <h2 class="title">مطور ويب , مصمم ويب</h2>
+                    <p class="bio">👋 مرحبًا! أنا أحمد، مطوّر ويب شغوف بتصميم وبناء واجهات مواقع جذابة وسريعة. لدي خبرة في HTML, CSS, JavaScript، وأستخدم React وNext.js لإنشاء تطبيقات ويب حديثة. أؤمن بأن تجربة المستخدم هي مفتاح نجاح أي موقع، وأسعى دائمًا لتقديم أفضل أداء وتصميم.
+
+💼 أنجزت عدة مشاريع شخصية وتدريبية، وأسعى باستمرار لتعلم تقنيات جديدة وتطوير مهاراتي. يمكنك الإطلاع على أعمالي أدناه!</p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn primary-btn">تواصل معي</a>
+                        <a href="#portfolio" class="btn outline-btn">مشاهدة أعمالي</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="mailto:boukhari_abdelaziz@etu.univ-blida.dz" aria-label="البريد الإلكتروني"><i class="fas fa-envelope"></i></a>
+                        <a href="يب" aria-label="لينكد إن"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="يب" aria-label="جيت هب"><i class="fab fa-github"></i></a>
+                        <a href="يب" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-visual"></div>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <a href="#about">
+                    <span>انتقل للأسفل</span>
+                    <i class="fas fa-chevron-down"></i>
+                </a>
             </div>
         </div>
-    </header>
+    </section>
 
-    <main class="main-content">
+    <!-- قسم نبذة عني -->
+    <section id="about" class="about section">
         <div class="container">
-            
-            <section class="skills-section">
-                <h2 class="section-title">المهارات</h2>
-                <div class="skills-grid">
-                    <div class="skill-item">اليالي</div>
+            <div class="section-header">
+                <span class="section-subtitle">تعرف علي</span>
+                <h2 class="section-title">نبذة عني</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>من أنا؟</h3>
+                    <p>👋 مرحبًا! أنا أحمد، مطوّر ويب شغوف بتصميم وبناء واجهات مواقع جذابة وسريعة. لدي خبرة في HTML, CSS, JavaScript، وأستخدم React وNext.js لإنشاء تطبيقات ويب حديثة. أؤمن بأن تجربة المستخدم هي مفتاح نجاح أي موقع، وأسعى دائمًا لتقديم أفضل أداء وتصميم.
+
+💼 أنجزت عدة مشاريع شخصية وتدريبية، وأسعى باستمرار لتعلم تقنيات جديدة وتطوير مهاراتي. يمكنك الإطلاع على أعمالي أدناه!</p>
+                    <p>أسعى دائماً للتطوير المستمر ومواكبة أحدث التقنيات والأساليب في مجال عملي. أؤمن بأن العمل الجاد والإبداع هما مفتاح النجاح.</p>
+                    <div class="about-details">
+                        <div class="detail">
+                            <strong>الاسم:</strong> بوخاري عبد العزيز
+                        </div>
+                        <div class="detail">
+                            <strong>التخصص:</strong> مطور ويب , مصمم ويب
+                        </div>
+                        
+                        <div class="detail">
+                            <strong>البريد الإلكتروني:</strong> boukhari_abdelaziz@etu.univ-blida.dz
+                        </div>
+                        
+                        <div class="detail">
+                            <strong>متاح للعمل:</strong> <span class="available">نعم</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn primary-btn">تواصل معي</a>
                 </div>
-            </section>
-            
-
-            <section class="contact-section">
-                <h2 class="section-title">تواصل معي</h2>
-                <p class="contact-description">هل تريد التعاون؟ لا تتردد في التواصل!</p>
-                
-                <a href="mailto:لايبلاي" class="contact-btn-large">
-                    أرسل رسالة
-                </a>
-                
-            </section>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-text">سنوات من الخبرة</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-text">مشاريع منجزة</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-text">عملاء سعداء</span>
+                    </div>
+                </div>
+            </div>
         </div>
-    </main>
+    </section>
 
+    
+    <!-- قسم المهارات -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">ماذا أتقن</span>
+                <h2 class="section-title">مهاراتي</h2>
+            </div>
+            <div class="skills-content">
+                <div class="skills-list">
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="skill-name">Front-End: HTML</h3>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="skill-name">CSS</h3>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="skill-name">JavaScript</h3>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="skill-name">React</h3>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="skill-name">Next.js</h3>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="skill-name">Tailwind</h3>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="skill-name">Figma</h3>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- قسم الأعمال -->
+    <section id="portfolio" class="portfolio section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">أعمالي السابقة</span>
+                <h2 class="section-title">آخر مشاريعي</h2>
+            </div>
+            <div class="portfolio-items">
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="/home/azizcs/Pictures/platformeProject.png" alt="موقع تعليمي">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3 class="project-title">موقع تعليمي</h3>
+                        <div class="project-tags">
+                            
+                        </div>
+                        <p class="project-description">موقع تعليمي تفاعلي مخصص لجميع المستويات و متمركر على اساسيات علوم الحاسب</p>
+                        <a href="#" class="btn project-link">عرض المشروع</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">كيف تجدني</span>
+                <h2 class="section-title">تواصل معي</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>البريد الإلكتروني</h3>
+                            <a href="mailto:boukhari_abdelaziz@etu.univ-blida.dz">boukhari_abdelaziz@etu.univ-blida.dz</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>الموقع</h3>
+                            <p>متاح للعمل عن بعد</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>وسائل التواصل</h3>
+                            <div class="social-links">
+                                <a href="#" aria-label="لينكد إن"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" aria-label="جيت هب"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>أرسل رسالة</h3>
+                    <form action="mailto:boukhari_abdelaziz@etu.univ-blida.dz" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="الاسم" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="الموضوع" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="الرسالة" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn submit-btn">
+                            <i class="fas fa-paper-plane"></i> إرسال
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- التذييل -->
     <footer class="footer">
         <div class="container">
-            <p>© 2025 لابلا - تم إنشاؤه باستخدام <a href="https://portfolioforall.com" target="_blank">PortfolioForAll</a></p>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>بوخاري عبد العزيز</h3>
+                    <p>مطور ويب , مصمم ويب</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">الرئيسية</a>
+                    <a href="#about">نبذة عني</a>
+                    <a href="#skills">المهارات</a>
+                    <a href="#portfolio">أعمالي</a>
+                    <a href="#contact">تواصل معي</a>
+                </div>
+                <div class="footer-social">
+                    <a href="mailto:boukhari_abdelaziz@etu.univ-blida.dz" aria-label="البريد الإلكتروني"><i class="fas fa-envelope"></i></a>
+                    <a href="#" aria-label="لينكد إن"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="جيت هب"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 بوخاري عبد العزيز - جميع الحقوق محفوظة</p>
+                <p>تم الإنشاء باستخدام <a href="https://portfolioforall.com" target="_blank">PortfolioForAll</a></p>
+            </div>
         </div>
     </footer>
+
+    <script>
+    // تفعيل القائمة المتجاوبة
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navbarMenu = document.querySelector('.navbar-menu');
+        
+        menuToggle.addEventListener('click', function() {
+            navbarMenu.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+        
+        // إغلاق القائمة عند النقر على الروابط
+        const navLinks = document.querySelectorAll('.navbar-menu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navbarMenu.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+        
+        // تفعيل روابط القائمة عند التمرير
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navbar = document.querySelector('.navbar');
+            
+            // إضافة خلفية للقائمة عند التمرير
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-scrolled');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+            }
+            
+            // تحديد القسم النشط
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    });
+    </script>
 </body>
 </html>
